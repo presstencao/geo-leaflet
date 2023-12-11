@@ -34,7 +34,7 @@ map.on('click', onMapClick);
     alert("You clicked the map at " + e.latlng);
 }
 
-  return <div id="map"  style={{width:'100%', height:'100%'}}></div>;
+  return coordinates && (<div id="map"  style={{width:'100%', height:'100%'}}></div>)
 };
 
 export default PointMap;
