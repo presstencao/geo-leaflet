@@ -4,12 +4,12 @@ import L from 'leaflet';
 
 const PointMap = (props) => {
 const {coordinates, config} = props
-
+let map;
   useEffect(() => {
     if(coordinates.length !== 0){
 
    
-    const  map = L.map('map', {center:[config.center.lat, config.center.lng], zoomControl:true, zoomSnap:0.1,zoomAnimation:true,boxZoom:true,trackResize:true}).setView([-23.5340096, -46.8253836],13); 
+      map = L.map('map', {center:[config.center.lat, config.center.lng], zoomControl:true, zoomSnap:0.1,zoomAnimation:true,boxZoom:true,trackResize:true}).setView([-23.5340096, -46.8253836],13); 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
