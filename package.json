@@ -1,10 +1,13 @@
 {
   "name": "geo-leaflet",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": " Gerar mapas baseados em geolocalização, obter atitude e longitude e converter em mapas.",
   "main": "dist/index.js",
-  "module":"dist/index.js",
-  "files": ["dist", "README.md"],
+  "module": "dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "repository": "https://github.com/presstencao/geo-leaflet.git",
   "author": "Fabio Silva",
   "license": "MIT",
@@ -23,11 +26,9 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   },
-  
-    "scripts": {
-      "start": "webpack serve --progress --inline --hot --port 8080",
-      "build": "cross-env NODE_ENV=production babel src --out-dir dist",
-      "deploy":"npm version patch && git push -u origin main --tags && npm publish"
-    }
-  
+  "scripts": {
+    "start": "webpack serve --progress --inline --hot --port 8080",
+    "build": "cross-env NODE_ENV=production babel src --out-dir dist",
+    "deploy": "npm version patch && git push -u origin main --tags && npm publish"
+  }
 }
