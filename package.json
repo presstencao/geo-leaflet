@@ -1,6 +1,6 @@
 {
   "name": "geo-leaflet",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": " Gerar mapas baseados em geolocalização, obter atitude e longitude e converter em mapas.",
   "main": "dist/index.js",
   "module": "dist/index.js",
