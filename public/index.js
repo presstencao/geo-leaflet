@@ -1,10 +1,5 @@
-import React from 'react'
-import GetLatLngGoogleUrl from '../src/components/GetLatLngGoogleUrl'
+import React from 'react';
+import { createRoot } from 'react-dom/client'; // Corrigindo a importação
+import App from './App';
 
- const App = () => {
-  return (
-    <GetLatLngGoogleUrl />
-  )
-}
-
-ReactDOM.render(<App />, document.getElementById('root'));
+createRoot(document.getElementById('root')).render(<App />);
