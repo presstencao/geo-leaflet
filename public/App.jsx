@@ -23,7 +23,7 @@ const App = () => {
  
     
   return (<>
-    <ErrorComponent error={503} description="Ocorreu um problema no servidor" />
+    {/* <ErrorComponent error={503} description="Ocorreu um problema no servidor" /> */}
     <h4>Lat: {coordinates.lat} Long:{coordinates.lng}</h4>
 
     <div style={{width:'80%', height:400, margin:'auto', background:'#c3c3c3'}}>

@@ -1,5 +1,5 @@
-import  { useEffect,useState } from 'react'
-import PropTypes from 'prop-types'
+import  { useState } from 'react'
+import P from 'prop-types'
 
 
 
@@ -36,19 +36,17 @@ function GetLatLngGoogleUrl(props) {
         setLat(coord[0])
         setLng(coord[1])
 
-    //Call the function when the url changes
-    useEffect(() => {
-        if (props.url) GetLatLngGoogleUrl()
-    }, [props.url])
+ 
 
     //Return the latitude and longitude
     return lat && lng && { lat: parseFloat(lat), lng: parseFloat(lng) }
 }
 
 //Set the prop types
-GetLatLngGoogleUrl.propTypes = {
-    url:PropTypes.string.isRequired
-}
+
 
 //Export the component
 export default GetLatLngGoogleUrl
+GetLatLngGoogleUrl.propTypes = {
+    url:P.string.isRequired
+}
