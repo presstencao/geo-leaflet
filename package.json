@@ -34,7 +34,7 @@
     "deploy": "npm version patch && git push -u origin main --tags && npm publish"
   },
   "dependencies": {
-    "geo-leaflet": "^0.1.2",
+    "geo-leaflet": "^0.1.9",
     "leaflet": "^1.9.4",
     "react-leaflet": "^4.2.1"
   }

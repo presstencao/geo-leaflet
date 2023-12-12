@@ -1,6 +1,6 @@
 //App.js
 import React, { useEffect, useState } from 'react';
-import{GetLatLngGoogleUrl, ErrorComponent, PointMap} from 'geo-leaflet'
+import { GetLatLngGoogleUrl } from 'geo-leaflet';
 
 
 

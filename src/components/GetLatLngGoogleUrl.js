@@ -18,7 +18,7 @@ function GetLatLngGoogleUrl(props) {
     const [lng, setLng] = useState(null)
 
     //Function to get the latitude and longitude from the url
-    function GetLatLngGoogleUrl() {
+   
         //Get the data from the url
         const data = props.url && props.url?.split('@')[1] || []
        
@@ -35,7 +35,7 @@ function GetLatLngGoogleUrl(props) {
         //Set the latitude and longitude state variables
         setLat(coord[0])
         setLng(coord[1])
-    }
+
     //Call the function when the url changes
     useEffect(() => {
         if (props.url) GetLatLngGoogleUrl()
